@@ -56,3 +56,9 @@
   - systemd daemon reload
   tags:
   - no-test
+
+- name: install iptables for CNI driver
+  package:
+    name: iptables
+    state: present
+  become: yes
